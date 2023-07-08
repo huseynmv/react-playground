@@ -29,26 +29,39 @@
 // const greeting2 = createGreeting("Yusif", "Hello");
 // console.log(greeting1, greeting2);
 
-const user = {
-  name: "Huseyn",
-  age: 23,
-  greet() {
-    console.log("Hello", user.name);
-  },
-};
-console.log(user);
-console.log(user.name);
-user.greet();
+// const user = {
+//   name: "Huseyn",
+//   age: 23,
+//   greet() {
+//     console.log("Hello", user.name);
+//   },
+// };
+// console.log(user);
+// console.log(user.name);
+// user.greet();
 
-class User {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  greet() {
-    console.log("Hi");
-  }
-}
+// class User {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   greet() {
+//     console.log("Hi");
+//   }
+// }
 
-const user1 = new User("huseyn", 23);
-user1.greet();
+// const user1 = new User("huseyn", 23);
+// user1.greet();
+
+// const cities = ["Baku", "New york", "Paris", "London", "Istanbul"];
+// console.log(cities[2]);
+
+// cities.push("Jalilabad");
+// console.log(cities);
+// const index = cities.findIndex((item) => {
+//   return item === "Paris";
+// });
+// console.log(index);
+
+// const editedCities = cities.map((item) => item + "!");
+// console.log(editedCities);
