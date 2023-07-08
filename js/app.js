@@ -15,16 +15,40 @@
 // console.log("10" == 10);
 // console.log("10" === 10);
 
-function greetUser(userName, message = "Hello") {
-  console.log(userName, message);
-}
-greetUser("Huseyn");
-greetUser("Yusif", "Whats up?");
+// function greetUser(userName, message = "Hello") {
+//   console.log(userName, message);
+// }
+// greetUser("Huseyn");
+// greetUser("Yusif", "Whats up?");
 
-function createGreeting(user, msg) {
-  return "Hi, I am " + user + ". " + msg;
+// function createGreeting(user, msg) {
+//   return "Hi, I am " + user + ". " + msg;
+// }
+
+// const greeting1 = createGreeting("Huseyn", "Salam");
+// const greeting2 = createGreeting("Yusif", "Hello");
+// console.log(greeting1, greeting2);
+
+const user = {
+  name: "Huseyn",
+  age: 23,
+  greet() {
+    console.log("Hello", user.name);
+  },
+};
+console.log(user);
+console.log(user.name);
+user.greet();
+
+class User {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
+    console.log("Hi");
+  }
 }
 
-const greeting1 = createGreeting("Huseyn", "Salam");
-const greeting2 = createGreeting("Yusif", "Hello");
-console.log(greeting1, greeting2);
+const user1 = new User("huseyn", 23);
+user1.greet();
